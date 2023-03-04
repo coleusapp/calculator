@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Coleus\Calculator\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class CalculatorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'calculator';
 
     public $description = 'My command';
 
