@@ -2,9 +2,9 @@
 
 namespace Coleus\Calculator\Tests;
 
+use Coleus\Calculator\CalculatorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Coleus\Calculator\CalculatorServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -2,9 +2,9 @@
 
 namespace Coleus\Calculator;
 
+use Coleus\Calculator\Commands\CalculatorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Coleus\Calculator\Commands\CalculatorCommand;
 
 class CalculatorServiceProvider extends PackageServiceProvider
 {
