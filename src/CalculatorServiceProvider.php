@@ -2,7 +2,6 @@
 
 namespace Coleus\Calculator;
 
-use Coleus\Calculator\Commands\CalculatorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,7 +18,9 @@ class CalculatorServiceProvider extends PackageServiceProvider
             ->name('calculator')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_calculator_table')
-            ->hasCommand(CalculatorCommand::class);
+            ->hasAssets()
+            ->hasRoute('web');
+
+        $this->app->bind('calculator', fn ($app) => new Calculator());
     }
 }
